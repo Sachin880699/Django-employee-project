@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+<form method="POST"  action="/emp">
+{% csrf_token %}
+ <div class="container">
+<br>
+    <div class="form-group row" >
+    <label class="col-sm-1 col-form-lable"></label>
+    <div class="col-sm-1 col-form-lable">
+        <h3> Employee Deatils:-</h3>
+    </div>
+    </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-lable">Employee Id:-</label>
+    <div class="col-sm-4">
+        {{form.eid}}
+    </div>
+    </div>
+    <div class="form-group-row">
+    <label class="col-sm-2 col-form-lable">Employee Name:-</label>
+    <div class="col-sm-4">
+        {{form.ename}}
+    </div>
+    </div>
+    <div class="form-group-row">
+    <label class="col-sm-2 col-form-lable">Employee Email:-</label>
+    <div class="col-sm-4">
+        {{form.eemail}}
+    </div>
+    </div>
+    <div class="form-group-row">
+    <label class="col-sm-2 col-form-lable">Employee Contact:-</label>
+    <div class="col-sm-4">
+        {{form.econtact}}
+    </div>
+    </div>
+    <div class="form-group-row">
+    <label class="col-sm-2 col-form-lable"></label>
+    <div class="col-sm-4">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+</div>
+</form>
+
+</body>
+</html>
+</form>
+
+</body>
+</html>
